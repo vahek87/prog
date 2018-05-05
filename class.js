@@ -1,4 +1,4 @@
-class Grass {
+class LivingC {
     constructor(x, y, index) {
         this.x = x;
         this.y = y;
@@ -15,7 +15,7 @@ class Grass {
             [this.x + 1, this.y + 1]
         ];
     }
-    chooseCell(character) {
+        chooseCell(character) {
         var found = [];
         for (var i in this.directions) {
             var x = this.directions[i][0];
@@ -28,6 +28,9 @@ class Grass {
         }
         return found;
     }
+}
+
+class Grass extends LivingC {
     mul() {
         this.multiply++;
         var newCell = random(this.chooseCell(0));
@@ -39,6 +42,7 @@ class Grass {
         }
     }
 }
+
 class GrassEater {
     constructor(x, y, index) {
         this.x = x;
@@ -142,6 +146,7 @@ class GrassEater {
         }
     }
 }
+
 class Gishatich {
     constructor(x, y, index) {
         this.x = x;
@@ -282,6 +287,7 @@ class Gishatich {
         }
     }
 }
+
 class Valod {
     constructor(x, y, index) {
         this.x = x;
