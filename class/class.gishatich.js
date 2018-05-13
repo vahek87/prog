@@ -1,4 +1,5 @@
-class Gishatich extends LivingC {
+var ClassM = require("./class.grass");
+module.exports = class Gishatich extends LivingC {
     constructor(x, y, index) {
         this.x = x;
         this.y = y;

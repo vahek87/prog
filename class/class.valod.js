@@ -1,4 +1,5 @@
-class Valod extends LivingC {
+var ClassM = require("./class.grass");
+module.exports = class Valod extends LivingC {
     constructor(x, y, index) {
         this.x = x;
         this.y = y;
